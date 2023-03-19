@@ -22,5 +22,6 @@ public class Main {
             Look at that! Our little camel is sunbathing!""";
 
         // write your code here
+        System.out.println(camel);
     }
 }
