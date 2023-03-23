@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         String camel = """
@@ -122,7 +124,18 @@ public class Main {
             It looks like we will soon have more rabbits!""";
 
         String[] animals = {camel, lion, deer, goose, bat, rabbit};
-
+        Scanner scanner = new Scanner(System.in);
+        String input = null;
         // write your code here
+        System.out.println("Please enter the number of the habitat you would like to view:");
+        while(true){
+            input = scanner.nextLine();
+            if(input.equals("exit")){
+                System.out.println("See you later!");
+                break;
+            }
+            int num = Integer.parseInt(input);
+            System.out.println(animals[num]);
+        }
     }
 }
